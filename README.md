@@ -2,6 +2,8 @@
 
 A small, browser-only JSON viewer built with plain HTML, CSS, and JavaScript. JSON is parsed locally in the browser; the application does not upload the JSON you paste or open.
 
+JSON Grove is open source. Browse the code or report an issue at [github.com/TwilightTechie/jsongrove](https://github.com/TwilightTechie/jsongrove). The project is made by [TwilightTechie](https://github.com/TwilightTechie).
+
 ## Run locally
 
 Open `index.html` in a browser, or serve this folder locally:
