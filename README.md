@@ -65,8 +65,8 @@ Google **AdSense** is the publisher product for showing ads on this site. Google
 2. Create an account at [Google AdSense](https://www.google.com/adsense/start/) and complete the payment and identity details requested for your account.
 3. In AdSense, add `jsongrove.com` under **Sites**. Follow the site's ownership verification instructions; Google may provide an HTML snippet, a meta tag, or an `ads.txt` method.
 4. Request a site review. Wait until the site's AdSense status is **Ready** before serving ads.
-5. In AdSense, choose Auto ads or create a responsive display ad unit. Add the code Google provides to the labeled ad area in `index.html`. Keep the ad visually distinct and separated from the JSON input and action buttons.
-6. If AdSense gives you an `ads.txt` entry, create `/ads.txt` at the site root with the exact line from your account. Do not copy a sample publisher ID.
+5. The account's AdSense loader is included in the `<head>` of `index.html`. After approval, choose Auto ads or create a responsive display ad unit in AdSense. Keep ads visually distinct and separated from the JSON input and action buttons.
+6. The root `ads.txt` file contains the exact seller line shown in this account's AdSense site details. Verify that `https://jsongrove.com/ads.txt` serves that plain-text line rather than the HTML homepage after deployment.
 7. Set up the consent messages AdSense requires for visitors in the EEA, UK, and Switzerland when applicable. Do not click your own ads or ask anyone else to click them.
 
 Google may request more useful original content or changes to the site's privacy disclosures before approving ads. Review the latest requirements in [AdSense site readiness](https://support.google.com/adsense/answer/12176698) and [publisher privacy disclosures](https://support.google.com/publisherpolicies/answer/10437794).
@@ -76,3 +76,5 @@ Google may request more useful original content or changes to the site's privacy
 - `index.html` — app, styling, SEO metadata, and content
 - `robots.txt` — crawler access and sitemap location
 - `sitemap.xml` — canonical homepage URL
+- `ads.txt` — authorized AdSense seller for this site
+- `privacy.html` — visitor privacy disclosure
